@@ -7,9 +7,10 @@ public class Main {
 	
 	public static void main (String []args) {
 		sumaDivisibles4();
+		numeroFactorial();
 	}
 		// Ejercicio1
-		public static void sumaDivisibles4() {
+		 static void sumaDivisibles4() {
 			System.out.println("Ingrese un numero:");
 			 int numero = Sc.nextInt();
 			 int suma = 0;
@@ -21,4 +22,15 @@ public class Main {
 			 }
 			 System.out.println("La suma es:" + suma);
 		}
+		static void numeroFactorial() {
+			
+			long factorial = 1;
+			System.out.println("Ingrese el numero:");
+			int n = Sc.nextInt();
+			
+			for(int i = 1; i <= n; i++) {
+			factorial *= i;
+		}
+			System.out.println("El factorial del numero es:" + factorial);
+}
 }
