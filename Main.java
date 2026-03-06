@@ -11,6 +11,7 @@ public class Main {
 		numerosPositivosNegativos();
 		promedioNumerosPares();
 		sumaNumeros();
+		multiplo_7_6();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -83,5 +84,16 @@ public class Main {
 				n/=10;
 			}
 			System.out.println("Suma de digitos;" + suma);
+		}
+		//SextoEjercicio
+		static void multiplo_7_6() {
+			
+			System.out.println("Ingrese un numero:");
+			int n = Sc.nextInt();
+			
+			if( n % 7 == 0 || n % 11 == 0)
+				System.out.println("Es multiplo de 7 o 11.");
+			else 
+				System.out.println("No es multiplo de 7 y 11");
 		}
 }
