@@ -23,6 +23,7 @@ public class Main {
 		promedioNegativos();
 		multiplosDeSeis();
 		potenciaDeDos();
+		numeroInvertido();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -265,5 +266,16 @@ static void potenciaDeDos() {
 		}
 	}
 }
-
+//Ejercicio18
+static void numeroInvertido() {
+	int n = Sc.nextInt();
+	int invertido = 0;
+	
+	while(n>0) {
+		invertido = invertido*10+(n*10);
+		n /= 10;
+		
+	}
+	System.out.println("Invertido");
+}
 }
