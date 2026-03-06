@@ -25,6 +25,7 @@ public class Main {
 		potenciaDeDos();
 		numeroInvertido();
 		determinarNumeroParOImpar();
+		leerTemperatura();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -288,6 +289,16 @@ static void determinarNumeroParOImpar() {
 		System.out.println("Par");
 	else 
 		System.out.println("Impar");
+	
+}
+//Ejercicio20
+static void leerTemperatura() {
+	
+	System.out.println("Ingrese la temperatura en celsius");
+	
+	double c = Sc.nextInt();
+	double f = (c * 9/5) + 32;
+	System.out.println("Temperatura en fahrenheit:" + f);
 	
 }
 }
