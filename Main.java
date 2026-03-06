@@ -24,6 +24,7 @@ public class Main {
 		multiplosDeSeis();
 		potenciaDeDos();
 		numeroInvertido();
+		determinarNumeroParOImpar();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -277,5 +278,16 @@ static void numeroInvertido() {
 		
 	}
 	System.out.println("Invertido");
+}
+//Ejercicio19
+static void determinarNumeroParOImpar() {
+	int n = Sc.nextInt();
+	int suma = (n*(n+1))/2;
+	
+	if(suma%2 == 0)
+		System.out.println("Par");
+	else 
+		System.out.println("Impar");
+	
 }
 }
