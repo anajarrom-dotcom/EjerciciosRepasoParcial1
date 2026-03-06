@@ -121,6 +121,27 @@ public class Main {
 		    	System.out.println("Tarde");
 		    else
 		    	System.out.println("Noche");
+		} 
+		//Ejercicio9
+		static void convertirNumeroRomano() {
+			
+			System.out.println("Numero (1 a 5)");
+			int n = Sc.nextInt();
+			
+			switch(n) {
+			
+			case 1: System.out.println("I");
+			break;
+			case 2: System.out.println("II");
+			break;
+			case 3: System.out.println("III");
+			break;
+			case 4: System.out.println("IV");
+			break;
+			case 5: System.out.println("V");
+			break;
+			default: 
+				System.out.println("fuera de rango");
 		}
-		static void 
+}
 }
