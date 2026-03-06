@@ -19,6 +19,7 @@ public class Main {
 		numeroMayorMenorDiferencia();
 		tablaDivision();
 		cantidadDigitosPares();
+		determinarNumeroTriangular();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -196,7 +197,7 @@ public class Main {
 			int n = Sc.nextInt();
 			int contador = 0;
 			
-			while(n>0) {
+		while(n>0) {
 				int d = n % 10;
 				
 				if (d % 2 == 0)
@@ -204,4 +205,21 @@ public class Main {
 				n/=10;
 			}
 		}
+		//Ejercicio14
+		static void determinarNumeroTriangular() {
+			
+			int n = Sc.nextInt();
+			int suma = 0;
+			int k = 1;
+			
+			while(suma<n) {
+				suma += k;
+				k++;
+			}
+			if(suma == n)
+				System.out.println("Es triangular");
+			else
+				System.out.println("No estriangular");
+		}
+		
 }
