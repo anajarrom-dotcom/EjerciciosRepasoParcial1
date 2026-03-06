@@ -8,6 +8,8 @@ public class Main {
 	public static void main (String []args) {
 		sumaDivisibles4();
 		numeroFactorial();
+		numerosPositivosNegativos();
+		promedioNumerosPares();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -52,5 +54,19 @@ public class Main {
 			System.out.println("Numeros Positivos:" + positivos);
 			System.out.println("Numeros Negativos" + negativos);
 			System.out.println("Ceros:" + ceros);
+		}
+		static void promedioNumerosPares() {
+			
+			int suma = 0,contador = 0;
+			System.out.println("Ingrese el numero del que desea ver los promedios pares:");
+			int n = Sc.nextInt();
+			
+			for(int i = 1; i <= n; i++) {
+				if(i % 2 == 0) {
+					contador++;
+				}
+			}
+			if(contador>0)
+				System.out.println("Promedio" + (suma/contador));
 		}
 }
