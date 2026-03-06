@@ -10,6 +10,7 @@ public class Main {
 		numeroFactorial();
 		numerosPositivosNegativos();
 		promedioNumerosPares();
+		sumaNumeros();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -55,6 +56,7 @@ public class Main {
 			System.out.println("Numeros Negativos" + negativos);
 			System.out.println("Ceros:" + ceros);
 		}
+		//CuartoEjercicio
 		static void promedioNumerosPares() {
 			
 			int suma = 0,contador = 0;
@@ -68,5 +70,18 @@ public class Main {
 			}
 			if(contador>0)
 				System.out.println("Promedio" + (suma/contador));
+		}
+		//QuintoEjercicio
+		static void sumaNumeros() {
+			
+			int suma = 0;
+			System.out.println("Ingrese un numero:(Se sumaran sus digitos)");
+			int n = Sc.nextInt();
+			
+			while(n>0) {
+				suma+= n % 10;
+				n/=10;
+			}
+			System.out.println("Suma de digitos;" + suma);
 		}
 }
