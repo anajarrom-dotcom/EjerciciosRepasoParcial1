@@ -12,6 +12,7 @@ public class Main {
 		promedioNumerosPares();
 		sumaNumeros();
 		multiplo_7_6();
+		numeroDivisibleEntre3YNoEn2();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -96,4 +97,17 @@ public class Main {
 			else 
 				System.out.println("No es multiplo de 7 y 11");
 		}
+		//Ejercicio7
+		static void numeroDivisibleEntre3YNoEn2() {
+			
+			System.out.println("Ingresa una cantidad:");
+			int n = Sc.nextInt();
+			
+			for(int i = 1; i <= n; i++) {
+				if( i % 3 == 0 && i % 2!=0) {
+					System.out.println(i);
+				}
+			}
+		}
+		
 }
