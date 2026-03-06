@@ -13,6 +13,7 @@ public class Main {
 		sumaNumeros();
 		multiplo_7_6();
 		numeroDivisibleEntre3YNoEn2();
+		leerHora();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -109,5 +110,17 @@ public class Main {
 				}
 			}
 		}
-		
+		//Ejercicio8
+		static void leerHora() {
+			System.out.println("Ingrese la hora");
+		    int hora = Sc.nextInt();
+		    
+		    if(hora<12)
+		    	System.out.println("Manana");
+		    else if(hora<18)
+		    	System.out.println("Tarde");
+		    else
+		    	System.out.println("Noche");
+		}
+		static void 
 }
