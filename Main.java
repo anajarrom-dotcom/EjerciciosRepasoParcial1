@@ -178,4 +178,14 @@ public class Main {
 			System.out.println("Menor" + menor);
 			System.out.println("Diferencia" + Math.abs(a-b));
 		}
+		//Ejercicio12
+		static void tablaDivision() {
+			int n = Sc.nextInt();
+			
+			for(int i = 1; i <= n; i++) {
+				System.out.println(n+"/"+i+"="+(n/i));
+				
+			}
+			
+		}
 }
