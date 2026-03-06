@@ -20,6 +20,8 @@ public class Main {
 		tablaDivision();
 		cantidadDigitosPares();
 		determinarNumeroTriangular();
+		promedioNegativos();
+		multiplosDeSeis();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -221,5 +223,35 @@ public class Main {
 			else
 				System.out.println("No estriangular");
 		}
-		
+		//Ejercicio15
+		static void promedioNegativos() {
+			
+			int n = 0;
+			int num;
+			int suma = 0;
+			int cont = 0;
+			
+			for(int i =1; i<=n;i++) {
+				num = Sc.nextInt();
+				
+				if(num<0) {
+					suma+=num;
+					cont++;
+				}
+			}
+			if(cont>0)
+				System.out.println("Promedio:" + (suma/cont));
+			else
+				System.out.println("No hay negativos");
+		}
+
+//Ejercicio16
+static void multiplosDeSeis() {
+	int n = Sc.nextInt();
+	
+	for(int i = 1; i <= n; i++) {
+		System.out.println(i*6);
+	}
+	
+}
 }
