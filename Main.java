@@ -22,6 +22,7 @@ public class Main {
 		determinarNumeroTriangular();
 		promedioNegativos();
 		multiplosDeSeis();
+		potenciaDeDos();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -254,4 +255,15 @@ static void multiplosDeSeis() {
 	}
 	
 }
+//Ejercicio17
+static void potenciaDeDos() {
+	int n = Sc.nextInt();
+	
+	while(n>1) {
+		if(n%2 !=0) {
+			System.out.println("Es potencia de 2");
+		}
+	}
+}
+
 }
