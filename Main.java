@@ -16,6 +16,9 @@ public class Main {
 		leerHora();
 		convertirNumeroRomano();
 		opcionMultiple();
+		numeroMayorMenorDiferencia();
+		tablaDivision();
+		cantidadDigitosPares();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -187,5 +190,18 @@ public class Main {
 				
 			}
 			
+		}
+		//Ejercicio13
+		static void cantidadDigitosPares() {
+			int n = Sc.nextInt();
+			int contador = 0;
+			
+			while(n>0) {
+				int d = n % 10;
+				
+				if (d % 2 == 0)
+					contador ++;
+				n/=10;
+			}
 		}
 }
