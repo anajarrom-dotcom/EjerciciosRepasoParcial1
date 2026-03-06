@@ -14,6 +14,8 @@ public class Main {
 		multiplo_7_6();
 		numeroDivisibleEntre3YNoEn2();
 		leerHora();
+		convertirNumeroRomano();
+		opcionMultiple();
 	}
 		// Ejercicio1
 		 static void sumaDivisibles4() {
@@ -144,4 +146,36 @@ public class Main {
 				System.out.println("fuera de rango");
 		}
 }
+		//Ejercicio10
+		static void opcionMultiple() {
+			int opcion, a, b;
+			
+			System.out.println("1.Sumar 2.Restar 3.Multiplicar");
+			opcion = Sc.nextInt();
+			
+			System.out.println("Numero 1:");
+			a = Sc.nextInt();
+			System.out.println("Numero 2:");
+			b = Sc.nextInt();
+			
+			switch(opcion) {
+			case 1: System.out.println("Resultado:" + (a+b));
+			case 2: System.out.println("Resultado" + (a-b));
+			case 3: System.out.println("Resultado" + (a*b));
+			}
+		}
+		//Ejercicio11
+		static void numeroMayorMenorDiferencia() {
+			int a, b;
+			
+			a= Sc.nextInt();
+			b = Sc.nextInt();
+			
+			int mayor = Math.max(a, b);
+			int menor = Math.min(a, b);
+			
+			System.out.println("Mayor:" + mayor);
+			System.out.println("Menor" + menor);
+			System.out.println("Diferencia" + Math.abs(a-b));
+		}
 }
